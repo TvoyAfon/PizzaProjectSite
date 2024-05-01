@@ -1,0 +1,15 @@
+.footer_container {
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    border: 1px solid gray;
+    flex-shrink: 0;
+    
+    a:hover{
+        transition: 0.5s all;
+        color:red;
+    }
+}

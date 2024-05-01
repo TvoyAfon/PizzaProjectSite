@@ -1,0 +1,135 @@
+.container{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    flex-shrink: 0;
+
+    .info{
+         display: grid;
+         grid-template-columns:  1fr 1fr 1fr 1fr;
+
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
+    .number{
+      gap:8px;
+      display: flex;
+      flex-direction: column;
+    }
+    .time{
+      gap:8px;
+      display: flex;
+      flex-direction: column;
+    }
+    .cart{
+        width: 150px;
+        height: 140px;
+        border:1px solid brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:5px;
+        padding: 8px;
+    } 
+    .button_cart{
+        text-decoration: none;
+        color:chocolate;
+        
+        &:hover{
+          text-decoration:underline;
+        }
+    }
+}
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        font-size: 24px;
+        list-style-type: none;
+        background-color:brown;
+        padding: 10px;
+        border-radius: 8px;
+        
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+        .link:hover{
+           text-decoration: underline;
+        }
+    }
+    .modal{
+       color: white;
+       cursor: pointer;
+        
+       &:hover{
+        color: rgba(236, 159, 159, 0.644);
+        text-decoration: underline;
+       }
+    }
+}
+
+.modalCall{
+  width: 330px;
+  height: 230px;
+  border: 1px solid gray;
+  position: absolute;
+  top:200px;
+  background-color: white;
+  font-weight: 400;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+  
+   .modalClose_icon{
+       font-size: 30px;
+       cursor: pointer;
+       transition: 0.3s all;
+
+       &:hover{
+        color:red;
+        opacity: 0.7;
+       }
+   }
+
+  input{
+    font-family: inherit;
+    font-size: 18px;
+    border-radius: 6px;
+  
+  }
+  .modalCall_button{
+    margin-top: 8px;
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ;
+
+    &:hover{
+      background-color: brown;
+      opacity: 0.85;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width:750px){
+  .number{
+    display: none !important;
+  }
+  .time{
+    display: none !important;
+  }
+  .navbar{
+    font-size: 18px !important;
+  }
+}
+    
