@@ -1,4 +1,4 @@
-#PizzaProjectSite#
+#PizzaProjectSite# lvl:junior,junior+
 
 ##stack##: 1.React+Vite+Typescript
        2.Redux-toolkit +(using react-hooks)
@@ -8,3 +8,4 @@
        
 ###my own server### : json-server db.json
 ####!at start#### : json-server --port 4000 --watch db.json (start my server)!
+(i have some bugs there)
